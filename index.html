@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="THUNDERBOLZ.ANIMES — Comece sua página dark ou aprenda a editar diretamente comigo.">
+<title>THUNDERBOLZ.ANIMES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#050505;--red:#ed102b;--white:#f7f7f7;--muted:#a7a7a7}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 12%,#171010 0,transparent 38%),var(--bg);color:var(--white);font-family:Montserrat,Arial,sans-serif}
+main{width:min(100% - 36px,650px);margin:0 auto;padding:62px 0 34px}
+header{text-align:center;margin-bottom:34px}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 19px;max-width:100%}
+.bolt{width:48px;height:66px;flex:none;filter:drop-shadow(0 0 12px #ed102b55)}
+.wordmark{font-weight:900;font-size:clamp(24px,7vw,39px);letter-spacing:-1.8px;line-height:1;white-space:nowrap}
+.wordmark span{color:var(--red)}
+.handle{font-size:clamp(18px,4.8vw,22px);font-weight:800;letter-spacing:-.5px;margin:0 0 12px}
+.intro{font-size:14px;line-height:1.75;color:#c3c3c3;max-width:480px;margin:0 auto}
+.prompt{margin:35px 0 20px;text-align:center;font-size:15px;line-height:1.7;font-weight:600}
+.prompt span{display:block;color:#bdbdbd;font-weight:500}
+.cards{display:grid;gap:17px}
+.card{position:relative;display:grid;grid-template-columns:116px minmax(0,1fr);align-items:center;gap:18px;min-height:180px;padding:22px;border:1px solid #5d242b;border-radius:20px;overflow:hidden;background:linear-gradient(112deg,#31090f 0%,#19080b 54%,#0c0c0c 100%);box-shadow:0 12px 34px #0008,inset 0 0 0 1px #ffffff08}
+.card:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,#ed102b18,transparent 56%)}
+.card.edit{border-color:#555;background:linear-gradient(112deg,#242424,#111 72%); }
+.symbol{height:104px;display:grid;place-items:center;position:relative}
+.symbol svg{width:82px;height:82px}
+.card h2{margin:0 0 9px;font-size:clamp(17px,4vw,21px);font-weight:800;letter-spacing:-.5px}
+.card p{margin:0 0 16px;color:#c4c4c4;font-size:12px;line-height:1.6}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:0 19px;border-radius:999px;background:var(--red);color:white;text-decoration:none;font-size:12px;font-weight:800;transition:transform .18s,filter .18s}
+.edit .cta{background:#f1f1f1;color:#111}
+.cta:hover{transform:translateY(-2px);filter:brightness(1.12)}
+footer{text-align:center;margin-top:42px;padding-top:22px;border-top:1px solid #292929;color:#777;font-size:11px;line-height:1.8}
+footer strong{display:block;color:#aaa;font-size:12px;margin-bottom:7px}
+@media(max-width:430px){main{padding-top:46px}.card{grid-template-columns:88px minmax(0,1fr);gap:13px;padding:17px;min-height:164px}.symbol svg{width:68px;height:68px}.card p{font-size:11px}.cta{min-height:39px;padding:0 15px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand" aria-label="Thunderbolz">
+    <svg class="bolt" viewBox="0 0 64 92" role="img" aria-label="Raio vermelho"><path fill="#ed102b" d="M39 0 3 49h23L13 92l48-58H36z"/></svg>
+    <div class="wordmark">THUNDER<span>BOLZ</span></div>
+  </div>
+  <h1 class="handle">THUNDERBOLZ.ANIMES</h1>
+  <p class="intro">Comece a sua página dark ou aprenda a editar diretamente comigo.</p>
+  <p class="prompt">Escolha o que você quer fazer nesse momento 👇</p>
+</header>
+<section class="cards" aria-label="Opções">
+  <article class="card">
+    <div class="symbol" aria-hidden="true">
+      <svg viewBox="0 0 100 100"><path d="M55 5 18 54h25L32 95 83 35H55l13-30Z" fill="#ed102b"/><path d="M55 5 18 54h25L32 95 83 35H55l13-30Z" fill="none" stroke="#ff5264" stroke-width="1.5"/></svg>
+    </div>
+    <div>
+      <h2>CONSULTORIA DARK</h2>
+      <p>Comece sua página dark do zero e aprenda a organizar seu perfil.</p>
+      <a class="cta" href="https://consultoriadark.vercel.app/" target="_blank" rel="noopener noreferrer">Quero começar <span>→</span></a>
+    </div>
+  </article>
+  <article class="card edit">
+    <div class="symbol" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none"><rect x="12" y="14" width="76" height="58" rx="7" stroke="#f1f1f1" stroke-width="4"/><path d="M22 84h56M30 33h40M30 45h28M30 57h35" stroke="#f1f1f1" stroke-width="5" stroke-linecap="round"/><path d="m69 7 4 7 8 1-6 6 1 8-7-4-7 4 1-8-6-6 8-1z" fill="#ed102b"/></svg>
+    </div>
+    <div>
+      <h2>AULA DE EDIÇÃO</h2>
+      <p>Aprenda a editar comigo, com orientação diretamente pelo WhatsApp.</p>
+      <a class="cta" href="https://wa.me/55249996553497?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20aula%20de%20edi%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Falar no WhatsApp <span>→</span></a>
+    </div>
+  </article>
+</section>
+<footer><strong>THUNDERBOLZ.ANIMES</strong>© 2026 • Todos os direitos reservados</footer>
+</main>
+</body>
+</html>
