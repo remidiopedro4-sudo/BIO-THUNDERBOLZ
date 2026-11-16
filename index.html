@@ -2,78 +2,101 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#050505">
 <meta name="description" content="THUNDERBOLZ.ANIMES — Comece sua página dark ou aprenda a editar diretamente comigo.">
-<title>THUNDERBOLZ.ANIMES</title>
+<title>THUNDERBOLZ.ANIMES | Sua próxima etapa começa aqui</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--bg:#050505;--red:#ed102b;--white:#f7f7f7;--muted:#a7a7a7}
+:root{color-scheme:dark;--bg:#050505;--panel:#111;--red:#ed102b;--white:#f7f7f7;--muted:#aaa;--line:#292929}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 12%,#171010 0,transparent 38%),var(--bg);color:var(--white);font-family:Montserrat,Arial,sans-serif}
-main{width:min(100% - 36px,650px);margin:0 auto;padding:62px 0 34px}
-header{text-align:center;margin-bottom:34px}
-.brand{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 19px;max-width:100%}
-.bolt{width:48px;height:66px;flex:none;filter:drop-shadow(0 0 12px #ed102b55)}
-.wordmark{font-weight:900;font-size:clamp(24px,7vw,39px);letter-spacing:-1.8px;line-height:1;white-space:nowrap}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,rgba(151,12,31,.16),transparent 34%),var(--bg);color:var(--white);font-family:Montserrat,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{width:min(100% - 34px,680px);margin:0 auto;padding:54px 0 30px}
+header{text-align:center;margin-bottom:30px}
+.brand{display:flex;align-items:center;justify-content:center;gap:9px;margin:0 auto 22px;max-width:100%}
+.bolt{width:43px;height:62px;flex:none;filter:drop-shadow(0 0 12px #ed102b55)}
+.wordmark{font-weight:900;font-size:clamp(25px,7vw,42px);letter-spacing:-2px;line-height:1;white-space:nowrap}
 .wordmark span{color:var(--red)}
-.handle{font-size:clamp(18px,4.8vw,22px);font-weight:800;letter-spacing:-.5px;margin:0 0 12px}
-.intro{font-size:14px;line-height:1.75;color:#c3c3c3;max-width:480px;margin:0 auto}
-.prompt{margin:35px 0 20px;text-align:center;font-size:15px;line-height:1.7;font-weight:600}
-.prompt span{display:block;color:#bdbdbd;font-weight:500}
+.handle{margin:0 0 12px;font-size:clamp(17px,4.5vw,21px);font-weight:800;letter-spacing:.2px}
+.intro{max-width:470px;margin:0 auto;color:#bdbdbd;font-size:14px;line-height:1.8;font-weight:500}
+.prompt{margin:31px 0 19px;font-size:15px;line-height:1.65;font-weight:700}
+.prompt span{display:block;color:#aaa;font-weight:500}
 .cards{display:grid;gap:17px}
-.card{position:relative;display:grid;grid-template-columns:116px minmax(0,1fr);align-items:center;gap:18px;min-height:180px;padding:22px;border:1px solid #5d242b;border-radius:20px;overflow:hidden;background:linear-gradient(112deg,#31090f 0%,#19080b 54%,#0c0c0c 100%);box-shadow:0 12px 34px #0008,inset 0 0 0 1px #ffffff08}
-.card:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,#ed102b18,transparent 56%)}
-.card.edit{border-color:#555;background:linear-gradient(112deg,#242424,#111 72%); }
-.symbol{height:104px;display:grid;place-items:center;position:relative}
-.symbol svg{width:82px;height:82px}
-.card h2{margin:0 0 9px;font-size:clamp(17px,4vw,21px);font-weight:800;letter-spacing:-.5px}
-.card p{margin:0 0 16px;color:#c4c4c4;font-size:12px;line-height:1.6}
-.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:0 19px;border-radius:999px;background:var(--red);color:white;text-decoration:none;font-size:12px;font-weight:800;transition:transform .18s,filter .18s}
-.edit .cta{background:#f1f1f1;color:#111}
-.cta:hover{transform:translateY(-2px);filter:brightness(1.12)}
-footer{text-align:center;margin-top:42px;padding-top:22px;border-top:1px solid #292929;color:#777;font-size:11px;line-height:1.8}
-footer strong{display:block;color:#aaa;font-size:12px;margin-bottom:7px}
-@media(max-width:430px){main{padding-top:46px}.card{grid-template-columns:88px minmax(0,1fr);gap:13px;padding:17px;min-height:164px}.symbol svg{width:68px;height:68px}.card p{font-size:11px}.cta{min-height:39px;padding:0 15px;font-size:11px}}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+.card{position:relative;isolation:isolate;display:grid;grid-template-columns:132px minmax(0,1fr);align-items:center;gap:19px;min-height:190px;padding:23px 25px;border:1px solid #8b2733;border-radius:19px;overflow:hidden;background:linear-gradient(112deg,#4a0b14 0%,#26090e 47%,#100b0c 100%);box-shadow:0 13px 35px #0009,inset 0 0 0 1px #ffffff0a;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.card:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 8% 50%,#ed102b25,transparent 58%)}
+.card:after{content:"";position:absolute;z-index:-1;width:180px;height:180px;right:-95px;top:-105px;border:1px solid #ffffff0c;border-radius:50%;box-shadow:0 0 0 18px #ffffff05,0 0 0 38px #ffffff03}
+.card:hover{transform:translateY(-3px);border-color:#ed5262;box-shadow:0 17px 42px #000b,inset 0 0 0 1px #ffffff10}
+.card.edit{border-color:#555;background:linear-gradient(112deg,#292929 0%,#191919 52%,#101010 100%)}
+.card.edit:before{background:radial-gradient(ellipse at 8% 50%,#ffffff14,transparent 58%)}
+.card.edit:hover{border-color:#aaa}
+.symbol{height:112px;display:grid;place-items:center;position:relative}
+.symbol svg{width:88px;height:88px;filter:drop-shadow(0 5px 13px #0008)}
+.copy{position:relative;min-width:0}
+.eyebrow{display:inline-block;margin-bottom:8px;color:#ff6977;font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.edit .eyebrow{color:#c8c8c8}
+.card h2{margin:0 0 9px;font-size:clamp(17px,3.8vw,22px);font-weight:900;letter-spacing:-.65px;line-height:1.2}
+.card p{margin:0 0 17px;color:#d0c4c5;font-size:12px;line-height:1.7;font-weight:500}
+.edit p{color:#c2c2c2}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:43px;padding:0 19px;border:1px solid #ff5363;border-radius:999px;background:linear-gradient(135deg,#f22b43,#c90924);color:#fff;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.1px;box-shadow:0 5px 17px #ed102b35;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
+.cta span{font-size:17px;line-height:1}
+.cta:hover{transform:translateY(-2px);filter:brightness(1.12);box-shadow:0 8px 22px #ed102b50}
+.edit .cta{border-color:#eee;background:linear-gradient(135deg,#f5f5f5,#d8d8d8);color:#111;box-shadow:0 5px 17px #0005}
+.edit .cta:hover{filter:brightness(1.07)}
+footer{margin-top:38px;padding:22px 0 5px;border-top:1px solid var(--line);text-align:center;color:#777;font-size:10px;line-height:1.9}
+footer strong{display:block;margin-bottom:5px;color:#bdbdbd;font-size:11px;letter-spacing:1px}
+footer .red{color:var(--red)}
+a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:480px){main{padding-top:43px}.brand{gap:7px;margin-bottom:19px}.bolt{width:34px;height:52px}.wordmark{font-size:clamp(23px,7.1vw,34px);letter-spacing:-1.6px}.prompt{margin-top:27px}.card{grid-template-columns:88px minmax(0,1fr);gap:13px;min-height:170px;padding:18px 15px;border-radius:17px}.symbol{height:94px}.symbol svg{width:70px;height:70px}.card h2{font-size:16px}.card p{font-size:11px;margin-bottom:13px}.eyebrow{font-size:9px;margin-bottom:7px}.cta{min-height:40px;padding:0 14px;font-size:10px;gap:8px}}
+@media(max-width:350px){.card{grid-template-columns:1fr;gap:5px;text-align:center;padding:18px}.symbol{height:66px}.symbol svg{width:58px;height:58px}.copy{display:flex;flex-direction:column;align-items:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
 <body>
 <main>
 <header>
-  <div class="brand" aria-label="Thunderbolz">
+  <div class="brand" aria-label="Logo THUNDERBOLZ">
     <svg class="bolt" viewBox="0 0 64 92" role="img" aria-label="Raio vermelho"><path fill="#ed102b" d="M39 0 3 49h23L13 92l48-58H36z"/></svg>
     <div class="wordmark">THUNDER<span>BOLZ</span></div>
   </div>
   <h1 class="handle">THUNDERBOLZ.ANIMES</h1>
   <p class="intro">Comece a sua página dark ou aprenda a editar diretamente comigo.</p>
-  <p class="prompt">Escolha o que você quer fazer nesse momento 👇</p>
+  <p class="prompt">Escolha o que você quer fazer nesse momento <span>👇</span></p>
 </header>
-<section class="cards" aria-label="Opções">
+
+<section class="cards" aria-label="Escolha como quer começar">
   <article class="card">
     <div class="symbol" aria-hidden="true">
-      <svg viewBox="0 0 100 100"><path d="M55 5 18 54h25L32 95 83 35H55l13-30Z" fill="#ed102b"/><path d="M55 5 18 54h25L32 95 83 35H55l13-30Z" fill="none" stroke="#ff5264" stroke-width="1.5"/></svg>
+      <svg viewBox="0 0 100 100"><path d="M55 5 18 54h25L32 95 83 35H55l13-30Z" fill="#ed102b"/><path d="M55 5 18 54h25L32 95 83 35H55l13-30Z" fill="none" stroke="#ff7884" stroke-width="1.5"/></svg>
     </div>
-    <div>
+    <div class="copy">
+      <span class="eyebrow">Comece do zero</span>
       <h2>CONSULTORIA DARK</h2>
-      <p>Comece sua página dark do zero e aprenda a organizar seu perfil.</p>
-      <a class="cta" href="https://consultoriadark.vercel.app/" target="_blank" rel="noopener noreferrer">Quero começar <span>→</span></a>
+      <p>Aprenda a montar e organizar sua página dark, mesmo começando do zero.</p>
+      <a class="cta" href="https://consultoriadark.vercel.app/" target="_blank" rel="noopener noreferrer">Conhecer a consultoria <span aria-hidden="true">→</span></a>
     </div>
   </article>
+
   <article class="card edit">
     <div class="symbol" aria-hidden="true">
       <svg viewBox="0 0 100 100" fill="none"><rect x="12" y="14" width="76" height="58" rx="7" stroke="#f1f1f1" stroke-width="4"/><path d="M22 84h56M30 33h40M30 45h28M30 57h35" stroke="#f1f1f1" stroke-width="5" stroke-linecap="round"/><path d="m69 7 4 7 8 1-6 6 1 8-7-4-7 4 1-8-6-6 8-1z" fill="#ed102b"/></svg>
     </div>
-    <div>
+    <div class="copy">
+      <span class="eyebrow">Aprenda comigo</span>
       <h2>AULA DE EDIÇÃO</h2>
-      <p>Aprenda a editar comigo, com orientação diretamente pelo WhatsApp.</p>
-      <a class="cta" href="https://wa.me/5524999653497?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20aula%20de%20edi%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Falar no WhatsApp <span>→</span></a>
+      <p>Aprenda a editar com uma aula diretamente pelo WhatsApp.</p>
+      <a class="cta" href="https://wa.me/5524999653497?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20aula%20de%20edi%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp <span aria-hidden="true">→</span></a>
     </div>
   </article>
 </section>
-<footer><strong>THUNDERBOLZ.ANIMES</strong>© 2026 • Todos os direitos reservados</footer>
+
+<footer>
+  <strong>THUNDERBOLZ<span class="red">.</span>ANIMES</strong>
+  Sua próxima etapa começa aqui.
+  <div>© 2026 • Todos os direitos reservados</div>
+</footer>
 </main>
 </body>
 </html>
